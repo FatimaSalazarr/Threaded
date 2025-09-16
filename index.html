@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THREADED - Una Historia de Amor Fraternal en el Londres Victoriano</title>
+    <meta name="description" content="THREADED es un juego inspirado en Londres de 1800, con un diseño vintage victoriano. Sigue la historia de Emily, una joven costurera que debe encontrar el regalo perfecto para su hermano.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="nav-container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <h1 class="logo-text">THREADED</h1>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="nav-links">
+                    <a href="#inicio" class="nav-link">Inicio</a>
+                    <a href="#sobre" class="nav-link">Historia</a>
+                    <a href="#emily" class="nav-link">Emily</a>
+                    <a href="#descargar" class="nav-link">Jugar</a>
+                    <a href="#actualizaciones" class="nav-link">Actualizaciones</a>
+                </div>
+
+                <!-- Download Button -->
+                <div class="nav-button">
+                    <button class="btn btn-primary">Descargar</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1682761107505-c9c1aa91fef6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaWclMjBiZW4lMjBsb25kb24lMjB2aW50YWdlfGVufDF8fHx8MTc1NzkwNzI2OHww&ixlib=rb-4.1.0&q=80&w=1080" alt="Big Ben London" class="hero-image">
+                <div class="hero-overlay"></div>
+                <div class="hero-texture"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-frame">
+                    <!-- Decorative corners -->
+                    <div class="corner corner-tl"></div>
+                    <div class="corner corner-tr"></div>
+                    <div class="corner corner-bl"></div>
+                    <div class="corner corner-br"></div>
+                    
+                    <h1 class="hero-title">THREADED</h1>
+                    <p class="hero-subtitle">Una Historia de Amor Fraternal en el Londres Victoriano</p>
+                    
+                    <div class="hero-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-diamond"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title" id="historia">La Historia de THREADED</h2>
+                    <div class="section-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-diamond"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                </div>
+
+                <!-- Emily's Story -->
+                <div class="emily-story-section">
+                    <div class="emily-story-card">
+                        <div class="card-content">
+                            <h3 class="emily-story-title">Un Corazón Valiente en Tiempos Difíciles</h3>
+                            <div class="emily-story-content">
+                                <p class="emily-story-text">
+                                    Conoce a <strong>Emily</strong>, nuestra valiente protagonista. Una joven adolescente que vive en el corazón del Londres victoriano, 
+                                    donde trabaja incansablemente en una tienda de encargos que acepta todo tipo de trabajos. Con sus hábiles manos, 
+                                    Emily se especializa en la costura de tela y cuero, reparando zapatos gastados, ropa desgarrada, sillas de montar, 
+                                    delantales y guantes para los habitantes de la gran metrópoli.
+                                </p>
+                                <p class="emily-story-text">
+                                    Pero detrás de su determinación se esconde una historia dolorosa. Tras la trágica muerte de sus padres por la viruela, 
+                                    Emily se ha convertido en la única protectora de su hermano pequeño. Cada puntada que da, cada reparación que realiza, 
+                                    está motivada por un amor incondicional: <em>alimentar y cuidar a la única familia que le queda</em>.
+                                </p>
+                                <p class="emily-story-text">
+                                    Cuando llega el cumpleaños de su hermano, Emily se encuentra ante un dilema que cambiará su vida. Sin saber qué podría 
+                                    hacer especial esta fecha tan importante, decide aventurarse por las vastas calles de Londres en busca del regalo perfecto: 
+                                    un balón de fútbol que traiga alegría al rostro de su hermano. Pero esta búsqueda será más de lo que jamás imaginó...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gameplay Section -->
+                <div class="gameplay-section">
+                    <h3 class="gameplay-title">¿Cómo Se Juega THREADED?</h3>
+                    <div class="gameplay-grid">
+                        <div class="gameplay-card">
+                            <div class="card-content">
+                                <h4 class="gameplay-card-title">🗺️ Exploración Libre</h4>
+                                <p class="gameplay-card-text">
+                                    Recorre un <strong>mundo abierto</strong> meticulosamente recreado del Londres victoriano de 1800. 
+                                    Desde las bulliciosas calles del centro hasta los rincones más oscuros de la ciudad, 
+                                    cada distrito tiene sus propios secretos, personajes únicos y oportunidades de descubrimiento.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="gameplay-card">
+                            <div class="card-content">
+                                <h4 class="gameplay-card-title">💬 Interacciones Profundas</h4>
+                                <p class="gameplay-card-text">
+                                    <strong>Habla con NPCs</strong> auténticos que reflejan la diversidad del Londres victoriano. 
+                                    Cada conversación puede revelar nueva información, abrir oportunidades comerciales, 
+                                    o dirigirte hacia el regalo perfecto para el hermano de Emily.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="gameplay-card">
+                            <div class="card-content">
+                                <h4 class="gameplay-card-title">🎁 Decisiones Cruciales</h4>
+                                <p class="gameplay-card-text">
+                                    El corazón del juego: <strong>decide qué regalarle al hermano de Emily</strong>. 
+                                    Cada opción que explores, cada objeto que consideres, afectará no solo la reacción 
+                                    de su hermano, sino también el desarrollo de la historia y las relaciones de Emily.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="gameplay-card">
+                            <div class="card-content">
+                                <h4 class="gameplay-card-title">🔍 Recolección y Descubrimiento</h4>
+                                <p class="gameplay-card-text">
+                                    <strong>Recolecta objetos</strong> esparcidos por toda la ciudad. Desde monedas perdidas hasta 
+                                    materiales raros para la costura, cada elemento puede ser clave para conseguir el regalo 
+                                    perfecto o para sobrevivir en las duras calles de Londres.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Features -->
+                <div class="game-features-section">
+                    <div class="game-features-card">
+                        <div class="card-content">
+                            <h3 class="game-features-title">Características del Juego</h3>
+                            <div class="game-features-grid">
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <span>🏙️</span>
+                                    </div>
+                                    <h4 class="feature-item-title">Londres Auténtico 1800</h4>
+                                    <p class="feature-item-text">Recreación histórica detallada con arquitectura, vestimenta y costumbres de la época</p>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <span>💝</span>
+                                    </div>
+                                    <h4 class="feature-item-title">Historia Emotiva</h4>
+                                    <p class="feature-item-text">Una narrativa conmovedora sobre el amor fraternal y la supervivencia</p>
+                                </div>
+                                <div class="feature-item">
+                                    <div class="feature-icon">
+                                        <span>⚡</span>
+                                    </div>
+                                    <h4 class="feature-item-title">Múltiples Finales</h4>
+                                    <p class="feature-item-text">Tus decisiones determinarán el destino de Emily y su hermano</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Emily Section -->
+        <section id="emily" class="emily-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Conoce a Emily</h2>
+                    <div class="section-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-diamond"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                    <p class="section-subtitle">Una joven costurera con un corazón valiente y una misión que definirá su destino</p>
+                </div>
+
+                <div class="emily-content">
+                    <!-- Primera fila: Imagen de Emily + Información Básica -->
+                    <div class="emily-top-row">
+                        <!-- Emily's Image -->
+                        <div class="emily-image-container">
+                            <div class="emily-card">
+                                <div class="card-content">
+                                    <div class="image-header">
+                                        <h3 class="image-title">Emily</h3>
+                                        <p class="image-subtitle">Nuestra valiente protagonista</p>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <!-- Placeholder for Emily's image -->
+                                        <img src="images/Emily.png" alt="Emily - Protagonista de THREADED" 
+                                         class="emily-character-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Información Básica -->
+                        <div class="emily-info-basic">
+                            <div class="emily-card">
+                                <div class="card-content">
+                                    <h3 class="card-title">Información Básica</h3>
+                                    <div class="info-section">
+                                        <h4 class="info-title">📋 Perfil del Personaje</h4>
+                                        <ul class="info-list">
+                                            <li><strong>Nombre:</strong> Emily</li>
+                                            <li><strong>Edad:</strong> Adolescencia tardía</li>
+                                            <li><strong>Ocupación:</strong> Costurera especializada</li>
+                                            <li><strong>Ubicación:</strong> Londres, 1800</li>
+                                            <li><strong>Situación familiar:</strong> Huérfana, cuida de su hermano menor</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Segunda fila: Habilidades, Motivaciones y Misión -->
+                    <div class="emily-bottom-row">
+                        <div class="emily-card">
+                            <div class="card-content">
+                                <h3 class="card-title center">Características del Personaje</h3>
+                                
+                                <div class="characteristics-grid">
+                                    <div class="characteristic">
+                                        <h4 class="characteristic-title">💪 Habilidades</h4>
+                                        <ul class="characteristic-list">
+                                            <li>• Costura experta en tela y cuero</li>
+                                            <li>• Reparación de calzado y vestimenta</li>
+                                            <li>• Trabajos especializados (sillas de montar, guantes)</li>
+                                            <li>• Supervivencia urbana</li>
+                                            <li>• Determinación inquebrantable</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="characteristic">
+                                        <h4 class="characteristic-title">💝 Motivaciones</h4>
+                                        <p class="characteristic-text">
+                                            Su único objetivo es <strong>cuidar y alimentar a su hermano menor</strong>, la única familia que le queda 
+                                            después de la tragedia que cambió sus vidas. Cada día trabaja incansablemente, pero el próximo 
+                                            cumpleaños de su hermano representa una oportunidad especial para demostrarle cuánto lo ama.
+                                        </p>
+                                    </div>
+
+                                    <div class="characteristic">
+                                        <h4 class="characteristic-title">🎯 Su Misión</h4>
+                                        <p class="characteristic-text">
+                                            Encontrar el <strong>regalo perfecto</strong> para el cumpleaños de su hermano. Emily ha decidido que 
+                                            un balón de fútbol podría traer la alegría que tanto necesita ver en el rostro de su hermano, 
+                                            pero conseguirlo en el Londres de 1800 será toda una aventura.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Message -->
+                <div class="development-message">
+                    <div class="development-card">
+                        <div class="card-content center">
+                            <h3 class="development-title">🚧 En Desarrollo Activo</h3>
+                            <p class="development-text">
+                                THREADED está siendo desarrollado con mucho amor y dedicación. La historia de Emily está tomando forma 
+                                día a día, y cada detalle del Londres victoriano está siendo cuidadosamente recreado para ofrecerte 
+                                una experiencia inolvidable.
+                            </p>
+                            <div class="development-footer">
+                                <span class="emoji">⏳</span>
+                                <p class="development-note">¡Esperen con ansias más actualizaciones muy pronto!</p>
+                                <span class="emoji">⏳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download Section -->
+        <section id="descargar" class="download-section">
+            <div class="container-small">
+                <div class="section-header">
+                    <h2 class="section-title">Jugar THREADED</h2>
+                    <div class="section-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-diamond"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                    <p class="section-subtitle">Embárcate en tu aventura victoriana</p>
+                </div>
+
+                <div class="download-card">
+                    <div class="card-content center">
+                        <div class="version-badge">
+                            <span class="badge">Versión Alpha v0.1.2</span>
+                        </div>
+                        
+                        <h3 class="download-title">Próximamente Disponible</h3>
+                        
+                        <p class="download-description">
+                            THREADED está en desarrollo activo. Únete a nuestra lista de espera para ser notificado 
+                            cuando la versión alpha esté lista. Ayúdanos a crear una experiencia inolvidable 
+                            siguiendo nuestro progreso en redes sociales.
+                        </p>
+
+                        <div class="download-features">
+                            <div class="feature-column">
+                                <h4 class="feature-title">✨ Incluirá:</h4>
+                                <ul class="feature-list">
+                                    <li>• Historia completa de Emily</li>
+                                    <li>• Exploración del Londres victoriano</li>
+                                    <li>• Sistema de recolección de objetos</li>
+                                    <li>• Múltiples finales según tus decisiones</li>
+                                    <li>• Banda sonora atmosférica original</li>
+                                </ul>
+                            </div>
+                            <div class="feature-column">
+                                <h4 class="feature-title">📋 Requisitos:</h4>
+                                <ul class="feature-list">
+                                    <li>• Windows 10/11 (64-bit)</li>
+                                    <li>• 4 GB RAM mínimo</li>
+                                    <li>• 2 GB espacio disponible</li>
+                                    <li>• AMD ryzen 3 o superior</li>
+                                    <li>• Resolución mínima: 1280x720</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="download-actions">
+                            <button class="btn btn-download" disabled>
+                                Próximamente - Unirse a Lista de Espera
+                            </button>
+                            
+                            <div class="download-links">
+                                <a href="#" class="download-link">Ver Notas de Versión</a>
+                                <span class="link-separator">•</span>
+                                <a href="#" class="download-link">Reportar Problemas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Updates Section -->
+        <section id="actualizaciones" class="updates-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Últimas Actualizaciones</h2>
+                    <div class="section-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-diamond"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                    <p class="section-subtitle">Mantente al día con el desarrollo de THREADED</p>
+                </div>
+
+                <div class="updates-grid">
+                    <div class="update-card">
+                        <div class="card-content">
+                            <div class="update-header">
+                                <span class="update-badge new">Nuevo</span>
+                                <span class="update-date">10 Ene 2025</span>
+                            </div>
+                            <h3 class="update-title">Diseño de Personajes Completado</h3>
+                            <p class="update-text">
+                                Hemos finalizado el diseño completo de Emily, incluyendo sus expresiones, vestuario victoriano 
+                                y animaciones básicas. El personaje ahora refleja perfectamente la personalidad valiente y 
+                                determinada que buscábamos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="update-card">
+                        <div class="card-content">
+                            <div class="update-header">
+                                <span class="update-badge">En Progreso</span>
+                                <span class="update-date">10 Feb 2025</span>
+                            </div>
+                            <h3 class="update-title">Mecánicas de Gameplay</h3>
+                            <p class="update-text">
+                                Estamos trabajando en el sistema de recolección de objetos y las interacciones con NPCs. 
+                                El mundo abierto del Londres victoriano está tomando forma con calles explorables 
+                                y secretos por descubrir.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="update-card">
+                        <div class="card-content">
+                            <div class="update-header">
+                                <span class="update-badge">Planificado</span>
+                                <span class="update-date">Próximamente</span>
+                            </div>
+                            <h3 class="update-title">Demo Jugable</h3>
+                            <p class="update-text">
+                                Estamos preparando una demo que incluirá los primeros 30 minutos del juego, 
+                                permitiendo a los jugadores experimentar la atmósfera del Londres de 1800 
+                                y conocer la historia de Emily.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">THREADED</h3>
+                    <p class="footer-text">
+                        Una historia emotiva sobre el amor fraternal en el Londres victoriano.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/threaded_creationspro" class="social-link" target="_blank">
+                            📷 Instagram
+                        </a>
+                        <a href="https://tiktok.com/@wonderlandcreation" class="social-link" target="_blank">
+                            🎵 TikTok
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Desarrollo</h4>
+                    <p class="footer-text">
+                        THREADED está en desarrollo activo. Todas las imágenes y contenido son preliminares.
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © 2024 THREADED. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('mobile-active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
